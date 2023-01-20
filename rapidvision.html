@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="vision2.css">
+  <link rel="stylesheet" href="contactpagina.css">
+  <title>RapidEngineering</title>
+  <link rel="icon" type="image/x-icon" href="IMG/favicon rapids.png">
+  <!--<video autoplay muted loop id="myVideo">
+    <source src="rapidvision.mp4/mdv1release.mp4" type="video/mp4">
+  </video>-->
+  <img class="logo" onclick="window.location.href='index.html'" src="IMG/RAPIDGRIJS.png">
+    <script src="/path/to/panelsnap.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          new PanelSnap();
+        });
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+  <li><a href="#" class="active">Home</a></li>
+  <li><a href="rapidvision.html">Rapidvision</a></li>
+  <li><a href="netsimulatie.html">NetSimulatie</a></li>
+  <li><a href="Engineering.html">Engineering</a></li>
+  <li><a href="automatiseringg.html">Automatisering</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">  
+      <div class="main">
+      <button class="btnswitch" id="language-button">Language</button>
+      
+        <h1>RAPID<span style="color: #00aeef;">VISION</span></h1>
+        <div class="dutch">
+          Afgelopen jaar hebben we RapiD Vision mogen ontwikkelen, een plug and play vision systeem voor in maritieme en -food omgevingen. 
+        De software is inmiddels getest in combinatie met een robot.
+         De eerste resultaten zijn zeer bevredigend. 
+        Vanuit hier kunnen wij toewerken naar het definitieve vision systeem dat in de meest ongunstige omstandigheden ingezet kan worden (vochtige omgeving, vieze/natte producten).
+        </div>
+
+          <div class="english">
+            Last year we were able to develop RapiD Vision, a plug and play vision system for maritime and food environments.
+          The software has now been tested in combination with a robot.
+           The first results are very satisfactory.
+          From here we can work towards the definitive vision system that can be used in the most unfavorable conditions (humid environment, dirty/wet products).
+          </div>
+          
+          
+          <script>
+            var languageButton = document.getElementById('language-button');
+var englishContent = document.querySelector('.english');
+var dutchContent = document.querySelector('.dutch');
+var isEnglish = (localStorage.getItem('isEnglish') === 'true');
+
+if (isEnglish) {
+  languageButton.textContent = 'Nederlands';
+  englishContent.style.display = 'block';
+  dutchContent.style.display = 'none';
+} else {
+  languageButton.textContent = 'Engels';
+  englishContent.style.display = 'none';
+  dutchContent.style.display = 'block';
+}
+
+languageButton.addEventListener('click', function() {
+  if (isEnglish) {
+    // Switch to Dutch
+    languageButton.textContent = 'Engels';
+    englishContent.style.display = 'none';
+    dutchContent.style.display = 'block';
+    localStorage.setItem('isEnglish', false);
+    isEnglish = false;
+  } else {
+    // Switch to English
+    languageButton.textContent = 'Nederlands';
+    englishContent.style.display = 'block';
+    dutchContent.style.display = 'none';
+    localStorage.setItem('isEnglish', true);
+    isEnglish = true;
+  }
+});
+          </script>
+          <a href="" class="btn-main"><p><i class="arrow down"></i></p></a>
+      </div>
+    </div>
+  </div>
+    <section>
+        <div class="supporting">
+            <div class="container">
+              <div class="content"></div>
+              <div class="slideshow-container">
+                <div class="main" id="section2">
+                  <h2></h2>
+                  <a href=""></a>
+                </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <video class="videootje" src="rapidvision.mp4/mdv1release.mp4" controls loop autoplay muted width="1180"></video>
+      
+              </div>
+      
+              <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <video class="videootje" src="rapidvision.mp4/ai_instance.mp4" controls autoplay muted width="1180"></video>
+                  <div class="text"></div>
+                </div>
+        
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <video class="videootje" src="rapidvision.mp4/Zalm.mp4" controls autoplay muted width="1180"></video>
+                  <div class="text"></div>
+                </div>
+      
+      
+              <a class="prev" onclick="plusSlides(-1)"><</a>
+              <a class="next" onclick="plusSlides(1)">></a>
+      
+              </div>
+              <br>
+      
+              <script>
+                  let slideIndex = 1;
+              showSlides(slideIndex);
+      
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+      
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+      
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+              }
+      
+      
+              </script>
+    </section>
+    <section>
+    </div>
+</div>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>CONTACT</h4>
+                                    <a class="tags" href="https://goo.gl/maps/KSy5GQHKRbHSRJsE8">Zuidoostrak 7, 8321 MA Urk</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4></h4>
+                                    <a class="tags1" href="tel:0527308020" title="Give me a call">+310527308020</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4></h4>
+                                    <a class="tags2" href="mailto:info@rapidengineering.nl" title="Send me an email">info@rapidengineering.nl</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                   
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/snap-scroll.js"></script>
+        <script>
+          var snapScroll = $("header, section, footer").SnapScroll({
+            hashes:true
+          });
+          console.log(snapScroll);
+    
+          //Listen for active element change
+          //You could listen globally like $(document)
+          $("header").on(snapScroll.eventChangeActive, function(evt, newActive){
+            console.log(evt, newActive);
+          });
+    
+          //Listen for visible element change
+          //You could listen on a specific element like $("header")
+          $(document).on(snapScroll.eventChangeVisible, function(evt, visibleList){
+            console.log(evt, visibleList.data);
+          });
+        </script>
+    </section>
+    <script>
+        var defaultOptions = {
+          container: document.body,
+          panelSelector: '> section',
+          directionThreshold: 50,
+          delay: 0,
+          duration: 300,
+          easing: function(t) { return t },
+        };
+      
+        new PanelSnap(options);
+      </script>
+  </body>
+</html>

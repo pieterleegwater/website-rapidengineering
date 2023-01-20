@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <img class="logo" onclick="window.location.href='index.html'" src="IMG/RAPIDGRIJS.png">
+    <link rel="stylesheet" href="contactpagina.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <input type="checkbox" id="active">
+  <label for="active" class="menu-btn"><span></span></label>
+  <label for="active" class="close"></label>
+  <div class="wrapper">
+    <ul>
+<li><a href="#" class="active">Home</a></li>
+<li><a href="rapidvision.html">Rapidvision</a></li>
+<li><a href="netsimulatie.html">NetSimulatie</a></li>
+<li><a href="Engineering.html">Engineering</a></li>
+<li><a href="automatiseringg.html">Automatisering</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+<div class="container">
+	<div class="row">
+	</div>
+	<div class="row">
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+</div>
+
+<section>
+    <footer class="footer-section">
+      <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="cta-text">
+                              <h4></h4>
+                              <a class="tags" href="https://goo.gl/maps/KSy5GQHKRbHSRJsE8">Zuidoostrak 7, 8321 MA Urk</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-phone"></i>
+                          <div class="cta-text">
+                              <h4></h4>
+                              <a class="tags" href="tel:0527308020" title="Give me a call">0527308020</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4></h4>
+                            <a class="tags" href="https://www.linkedin.com/company/rapidengineering/">linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="far fa-envelope-open"></i>
+                          <div class="cta-text">
+                              <h4></h4>
+                              <a class="tags" href="mailto:info@rapidengineering.nl" title="Send me an email">info@rapidengineering.nl</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                             
+              </div>
+          </div>
+      </div>
+  </footer>
+</section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/snap-scroll.js"></script>
+  <script>
+    var snapScroll = $("header, section, footer").SnapScroll({
+      hashes:true
+    });
+    console.log(snapScroll);
+
+    //Listen for active element change
+    //You could listen globally like $(document)
+    $("header").on(snapScroll.eventChangeActive, function(evt, newActive){
+      console.log(evt, newActive);
+    });
+
+    //Listen for visible element change
+    //You could listen on a specific element like $("header")
+    $(document).on(snapScroll.eventChangeVisible, function(evt, visibleList){
+      console.log(evt, visibleList.data);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+Name:
+pieter leegwater 
+
+Support:
+pieterleeg12345@gmail.com
+0657820597
+
+Description:
+wat is er allemaal tezien in dit bestand dit is de code van de website rapid engineering in de index kun je alles zien
+wat er op de homepagina van de website is tezien in de code heb ik ook allemaal comentaar regels gezet zodat je kunt zien 
+wat wat is. de rest van de folders spreken voor zich ze hebben de naam van de pagina. Hoe weet je welke css je moet werken
+dat is heel simpel je kijkt bij de eerste paar regels van de code daar zie je links staan en dan staat de css er bij
+de afbeeldingen zijn tevinden bij IMG en de video's bij rapidvision.mp4
+
+Hoe kun je de site op localhost bekijken?
+
+-Download XAMPP
+-volg de stappen van XAMPP
+-download het op je schijf
+-ga naar je schijf
+-open xampp folder dan open je de htdocs folder en daarin zet je de map van de website
+(xampp/htdocs)
+-open je xampp control panel
+-run apache
+-open je browser en typ in localhost dan verschijnen er folders en kan je de rapid website openen

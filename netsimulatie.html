@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="vision2.css">
+  <link rel="stylesheet" href="contactpagina.css">
+  <title>RapidEngineering</title>
+  <link rel="icon" type="image/x-icon" href="IMG/favicon rapids.png">
+  <!--<video autoplay muted loop id="myVideo">
+    <source src="rapidvision.mp4/mdv1release.mp4" type="video/mp4">
+  </video>-->
+  <img class="logo" onclick="window.location.href='index.html'" src="IMG/RAPIDGRIJS.png">
+    <script src="/path/to/panelsnap.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          new PanelSnap();
+        });
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+  <li><a href="#" class="active">Home</a></li>
+  <li><a href="rapidvision.html">Rapidvision</a></li>
+  <li><a href="netsimulatie.html">NetSimulatie</a></li>
+  <li><a href="Engineering.html">Engineering</a></li>
+  <li><a href="automatiseringg.html">Automatisering</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">  
+      <div class="main">
+        <button class="btnswitch" id="language-button">Language</button>
+
+        <h1>NET<span style="color: #00aeef;">SIMULATIE</span></h1>
+        <div class="english">
+          As a follow-up to the Net designer software, we are building an application that converts the 2D drawing of the net into a 3D model.
+          We then simulate this model with FEM calculations, so that we can predict the behavior of the net underwater.
+           This allows the ideal fishing net to be designed for the lowest possible fuel consumption and as little wear as possible.
+        </div>
+        
+        <div class="dutch">
+          Als vervolg op de Net designer software zijn we een applicatie aan het bouwen die de 2D tekening van het net omzet naar een 3D model. Dit model simuleren we vervolgens met FEM berekeningen, waardoor we het gedrag van het net onderwater kunnen voorspellen. Hiermee kan het ideale visserijnet ontworpen worden voor een zo laag mogelijk brandstofgebruik en zo min mogelijk slijtage.
+        </div>
+        <script>
+          var languageButton = document.getElementById('language-button');
+var englishContent = document.querySelector('.english');
+var dutchContent = document.querySelector('.dutch');
+var isEnglish = (localStorage.getItem('isEnglish') === 'true');
+
+if (isEnglish) {
+  languageButton.textContent = 'Nederlands';
+  englishContent.style.display = 'block';
+  dutchContent.style.display = 'none';
+} else {
+  languageButton.textContent = 'Engels';
+  englishContent.style.display = 'none';
+  dutchContent.style.display = 'block';
+}
+
+languageButton.addEventListener('click', function() {
+  if (isEnglish) {
+    // Switch to Dutch
+    languageButton.textContent = 'Engels';
+    englishContent.style.display = 'none';
+    dutchContent.style.display = 'block';
+    localStorage.setItem('isEnglish', false);
+    isEnglish = false;
+  } else {
+    // Switch to English
+    languageButton.textContent = 'Nederlands';
+    englishContent.style.display = 'block';
+    dutchContent.style.display = 'none';
+    localStorage.setItem('isEnglish', true);
+    isEnglish = true;
+  }
+});
+        </script>
+        <a href="" class="btn-main"><p><i class="arrow down"></i></p></a>
+      </div>
+    </div>
+  </div>
+    <section>
+        <div class="supporting">
+            <div class="container">
+              <div class="content"></div>
+              <div class="slideshow-container">
+                <div class="main" id="section2">
+                  <h2></h2>
+                  <a href=""></a>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <video class="videootje" src="rapidvision.mp4/NetSimulatie.mp4" controls autoplay muted  width="1180"></video>
+                  
+                </div>
+      
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <video class="videootje" src="rapidvision.mp4/Net2D.mp4" controls autoplay muted  width="1180"></video>
+                
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <video class="videootje" src="rapidvision.mp4/Net3D.mp4" controls autoplay muted width="1180"></video>
+                <div class="text"></div>
+              </div>
+      
+      
+              <a class="prev" onclick="plusSlides(-1)"><</a>
+              <a class="next" onclick="plusSlides(1)">></a>
+      
+              </div>
+              <br>
+            </section>
+      
+              <script>
+                  let slideIndex = 1;
+              showSlides(slideIndex);
+      
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+      
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+      
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+              }
+      
+      
+              </script>
+    </section>
+    <section>
+    </div>
+</div>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>CONTACT</h4>
+                                    <a class="tags" href="https://goo.gl/maps/KSy5GQHKRbHSRJsE8">Zuidoostrak 7, 8321 MA Urk</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4></h4>
+                                    <a class="tags1" href="tel:0527308020" title="Give me a call">+310527308020</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4></h4>
+                                    <a class="tags2" href="mailto:info@rapidengineering.nl" title="Send me an email">info@rapidengineering.nl</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                   
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/snap-scroll.js"></script>
+        <script>
+          var snapScroll = $("header, section, footer").SnapScroll({
+            hashes:true
+          });
+          console.log(snapScroll);
+    
+          //Listen for active element change
+          //You could listen globally like $(document)
+          $("header").on(snapScroll.eventChangeActive, function(evt, newActive){
+            console.log(evt, newActive);
+          });
+    
+          //Listen for visible element change
+          //You could listen on a specific element like $("header")
+          $(document).on(snapScroll.eventChangeVisible, function(evt, visibleList){
+            console.log(evt, visibleList.data);
+          });
+        </script>
+    </section>
+    <script>
+        var defaultOptions = {
+          container: document.body,
+          panelSelector: '> section',
+          directionThreshold: 50,
+          delay: 0,
+          duration: 300,
+          easing: function(t) { return t },
+        };
+      
+        new PanelSnap(options);
+      </script>
+  </body>
+</html>
